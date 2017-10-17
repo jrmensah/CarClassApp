@@ -4,14 +4,39 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Car a = new Car();
-        a.setName("Porsche");
-        a.setColor("Red");
-        System.out.println("This is a" + " " +a.getName());
-        System.out.println(a.start());
-        System.out.println(a.accelerate());
-        System.out.println(a.mph());
-        System.out.println(a.stop());
+        Porsche p = new Porsche();
+        p.setName("Porsche");
+        p.setColor("Red");
+        System.out.println("This is a" + " " +p.getName());
+        System.out.println(p.start());
+        System.out.println(p.accelerate());
+        System.out.println(p.mph());
+        System.out.println(p.stop());
         System.out.println();
+
+        System.out.println("----------------------------------------");
+
+        Jetta j = new Jetta();
+        j.setName("Jetta");
+        j.setColor("Blue");
+        System.out.println("This is a" + " " +j.getName());
+        System.out.println(j.start());
+        System.out.println(j.accelerate());
+        System.out.println(j.emission());
+        System.out.println(j.emissionpass());
+        System.out.println(j.pass());
+        System.out.println();
+
+        System.out.println("----------------------------------------");
+
+        System.out.println(p.start());
+        System.out.println(j.start());
+        System.out.println(p.accelerate());
+        System.out.println(j.accelerate());
+        System.out.println(j.emission());
+        System.out.println(j.emissionpass());
+        System.out.println(p.mph());
+        System.out.println(p.stop());
+        System.out.println(j.pass());
     }
 }
